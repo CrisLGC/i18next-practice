@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>i18next practice</title>
+  <!-- Enlaza la hoja de estilos principal -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Incluye la librería i18next desde CDN -->
+  <script src="https://unpkg.com/i18next@23.4.6/i18next.min.js"></script>
+  <!-- Incluye el backend HTTP de i18next para cargar archivos de traducción -->
+  <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Título principal traducible -->
+    <h1 data-i18n="welcome"></h1>
+    <!-- Subtítulo traducible -->
+    <h2 data-i18n="description"></h2>
+    <!-- Selector de idioma -->
+    <select id="languageSwitcher">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+  <!-- Script principal de la aplicación -->
+  <script src="js/app.js"></script>
+</body>
+</html>
